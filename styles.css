@@ -2,6 +2,9 @@ body, h1, p {
     margin: 0;
     padding: 0;
 }
+h1{
+    line-height: 160%;
+}
 
 h3{
     font-family: Arial, Helvetica, sans-serif;   
@@ -54,6 +57,7 @@ h2{
 
   .nav-links li {
     margin-right: 20px;
+    font-family: Arial, Helvetica, sans-serif; 
 }
 
 .nav-links li a {
@@ -335,3 +339,135 @@ footer a {
     padding: 24px 112px;
     color: #fff;
 }
+
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    padding: 16px; 
+  }
+
+  .hero-content h1 {
+    font-size: calc(1.2rem + 2vw); 
+    padding-top: calc(30px + (viewport-height - 600px) / 3); 
+    padding-left:40px;
+    padding-right:40px;
+  }
+
+
+  .nav-icons {
+    width: auto; 
+  }
+
+
+
+  .ad {
+    width: 80%; 
+    height: 80%;
+    align-self: center;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .popular-finds-ctn {
+    justify-content: center;
+    align-items: center;
+    padding-top: 64px;
+    padding-bottom: 64px; 
+  }
+  .new-products-ctn {
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+    padding-bottom: 64px; 
+  }
+  .new-products{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+  }
+
+  
+  .Gear-ctn, .Gear-ctn2{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .article-card{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+  }
+ footer{
+    flex-direction: column-reverse;
+    gap: 64px;
+    justify-content: center;
+    align-items: center;
+ } 
+ .left-column{
+    flex-direction: column;
+ }
+ .right-column{
+    align-items: center;
+ }
+ .copyright{
+    text-align: center;
+    
+ }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .hero-content h1 {
+    font-size: calc(1.3rem + 2.5vw); /* Adjust font size for medium screens */
+  }
+
+ 
+  .ad {
+    width: 70%; }
+    .popular-finds-ctn {
+        justify-content: center;
+        align-items: center;
+        padding-top: 64px;
+        padding-bottom: 64px; 
+      }
+      .new-products-ctn {
+        justify-content: center;
+        align-items: center;
+        padding-top: 200px;
+        padding-bottom: 64px; 
+      }
+      .new-products{
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+      }
+      .product-card{
+        width: 320px;
+
+      }
+      
+      .Gear-ctn, .Gear-ctn2{
+        justify-content: center;
+        align-items: center;
+        padding-left: 32px;
+        padding-right: 32px;
+        gap: 16px;
+      }
+      .article-card{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 400px;
+      }
+      .article-img{
+        height: 320px;
+      }
+      .article-img-sm{
+        height: 320px;
+      }
+  }
+
+
+
+
